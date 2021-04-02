@@ -1,0 +1,29 @@
+<h1>
+    Statistique des offres
+</h1>
+<div class="row">
+    <div class="">
+        <!-- <div class="card-header"> -->
+
+        <!-- </div> -->
+        <div class="card-body">
+            <table>
+                <tr id="header">
+                    <th>Nom</th>
+                    <th>prix</th>
+                    <th>nomCategorie</th>
+                    <th>nombre</th>
+                    <th>idOffre</th>
+                </tr>
+                <tr *ngFor="let stat of stats">
+                    <td>{{stat.nom}}</td>
+                    <td>{{stat.prix}} </td>
+                    <td>{{stat.nomCategorie}} </td>
+                    <td>{{stat.nombre}} </td>
+                    <td>{{stat.idOffre}} </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>

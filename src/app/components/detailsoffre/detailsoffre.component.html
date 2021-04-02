@@ -1,0 +1,40 @@
+<h1>
+    Details offres
+</h1>
+
+<div class="row">
+    <div class="">
+        <!-- <div class="card-header"> -->
+
+
+        <!-- </div> -->
+        <div class="card-body">
+            <table>
+                <tr id="header">
+                    <th>idDetailsOffre</th>
+                    <th>idOffre</th>
+                    <th>idTypeForfait</th>
+                    <th>quantite</th>
+                    <th>debut</th>
+                    <th>fin</th>
+                    <th>Nom offre</th>
+                    <th>Nom typeForfait</th>
+                    <th>unite</th>
+                </tr>
+                <tr *ngFor="let detail of details">
+                    <td>{{detail.idDetailsOffre}}</td>
+                    <td>{{detail.idOffre}}</td>
+                    <td>{{detail.idTypeForfait}}</td>
+                    <td>{{detail.quantite}}</td>
+                    <td>{{detail.debut}}</td>
+                    <td>{{detail.fin}}</td>
+                    <td>{{detail.nomOffre}}</td>
+                    <td>{{detail.nomTypeForfait}}</td>
+                    <td>{{detail.uniteTypeForfait}}</td>
+                    <td><button>Modifier</button> </td>
+                    <td><button>Supprimer</button> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<h1>
+    Validation des depots
+</h1>
+<div class="row">
+    <div class="">
+        <!-- <div class="card-header"> -->
+
+        <!-- </div> -->
+        <div class="card-body">
+            <table>
+                <tr id="header">
+                    <th>idDepot</th>
+                    <th>idNumero</th>
+                    <th>montant</th>
+                    <th>validation</th>
+                    <th>dateDepot</th>
+                    <th>numero</th>
+                </tr>
+                <tr  *ngFor="let depot of depots">
+                    <td>{{depot.idDepot}} </td>
+                    <td>{{depot.idNumero}} </td>
+                    <td>{{depot.montant}} </td>
+                    <td>{{depot.validation}} </td>
+                    <td>{{depot.dateDepot}}</td>
+                    <td>{{depot.numero}}</td>
+                    <td><button>Modifier</button> </td>
+                    <td><button>Supprimer</button> </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<h1>
+    Gestion des tarifs
+</h1>
+<div class="row">
+    <div class="">
+        <!-- <div class="card-header"> -->
+
+        <!-- </div> -->
+        <div class="card-body">
+            <table>
+                <tr id="header">
+                    <th>idTarifsAppel</th>
+                    <th>idOffre</th>
+                    <th>idOperateur</th>
+                    <th>idOperateurDest</th>
+                    <th>prixParSeconde</th>
+                    <th>nomOffre</th>
+                    <th>nomOperateur</th>
+                    <th>nomOperateurDest</th>
+                </tr>
+                <tr *ngFor="let tarif of tarifs">
+                    <td>{{tarif.idTarifsAppel}}</td>
+                    <td>{{tarif.idOffre}}</td>
+                    <td>{{tarif.idOperateur}}</td>
+                    <td>{{tarif.idOperateurDest}}</td>
+                    <td>{{tarif.prixParSeconde}}</td>
+                    <td>{{tarif.nomOffre}}</td>
+                    <td>{{tarif.nomOperateur}}</td>
+                    <td>{{tarif.nomOperateurDest}}</td>
+                    <td><button>Modifier</button> </td>
+                    <td><button>Supprimer</button> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

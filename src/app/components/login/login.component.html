@@ -1,0 +1,26 @@
+<body>
+    <section class="wrapper">
+        <div class="content">
+          <header>
+            <h1 style="color:red;">{{errorMsg}}</h1>
+            <h1>Welcome <i>Telma</i> admin</h1>
+          </header>
+          <section>
+            <form class="login-form">
+              <div class="input-group">
+                <label for="username">Username or Email</label>
+                <input type="text" [(ngModel)]="email" name="email" placeholder="Username or Email" id="username">
+              </div>
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" [(ngModel)]= "mdp" name="mdp" placeholder="Password" id="password">
+              </div>
+              <div class="input-group"><button (click)="login()">Login</button></div>
+            </form>
+          </section>
+          <footer>
+            <a href="#" title="Forgot Password">Forgot Password</a>
+          </footer>
+        </div>
+      </section>
+</body>

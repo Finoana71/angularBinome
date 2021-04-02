@@ -1,0 +1,113 @@
+<body>
+<div class="container" *ngIf="!getAbout()">
+    <div class="row">
+
+
+
+      <div class="card">
+        <div class="card-header">
+          <h1 *ngIf="getOffre()" style="background: rgb(243, 247, 13);">
+            <a href="/offres">
+              Gestion offres
+            </a>
+          </h1>
+          <h1 *ngIf="!getOffre()">
+            <a href="/offres">
+              Gestion offres
+            </a>
+          </h1>
+        </div>
+      </div>
+
+
+
+
+      <div class="card">
+        <div class="card-header">
+          <h1 *ngIf="getTarif()" style="background: rgb(243, 247, 13);">
+            <a href="/tarifs">
+              Tarifs appels
+            </a>
+          </h1>
+          <h1 *ngIf="!getTarif()">
+            <a href="/tarifs">
+              Tarifs appels
+            </a>
+          </h1>
+        </div>
+      </div>
+
+
+
+
+      <div class="card">
+        <div class="card-header">
+          <h1 *ngIf="getMoney()" style="background: rgb(243, 247, 13);">
+            <a href="/mobile-money">
+              Mobile money
+            </a>
+          </h1>
+          <h1 *ngIf="!getMoney()">
+            <a href="/mobile-money">
+              Mobile money
+            </a>
+          </h1>
+        </div>
+      </div>
+
+
+
+
+      <div class="card">
+        <div class="card-header">
+          <h1 *ngIf="getStat()" style="background: rgb(243, 247, 13);">
+            <a href="/statistiques">
+              Statistiques
+            </a>
+          </h1>
+          <h1 *ngIf="!getStat()">
+            <a href="/statistiques">
+              Statistiques
+            </a>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="getAbout()">
+    <div class="heading">
+      <h3>Projet Cloud S5
+        Travail en binôme
+        Promotion 12</h3>
+    </div>
+    <div class="row">
+      
+      <div class="card">
+        <div class="card-header">
+          <h1>
+            ETU000941
+          </h1>
+        </div>
+        <div class="card-body">
+          <p>
+            Finoana Mandresy
+          </p>
+          <!-- <a href="#" class="btn">Read more</a> -->
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h1>
+            ETU000911
+          </h1>
+        </div>
+        <div class="card-body">
+          <p>
+            Danih Stephane
+          </p>
+          <!-- <a href="#" class="btn">Read more</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
